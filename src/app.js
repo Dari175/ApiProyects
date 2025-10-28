@@ -28,7 +28,9 @@ app.get('/', (req, res) => {
       'PUT /api/proyectos/:id': 'Actualizar un proyecto',
       'DELETE /api/proyectos/:id': 'Eliminar un proyecto',
       'GET /api/proyectos/estado/:estado': 'Filtrar por estado',
-      'GET /api/proyectos/categoria/:categoria': 'Filtrar por categoría'
+      'GET /api/proyectos/categoria/:categoria': 'Filtrar por categoría',
+      'POST /api/proyectos/:id/imagenes': 'Agregar imagen a un proyecto',
+      'DELETE /api/proyectos/:id/imagenes/:imagenId': 'Eliminar imagen de un proyecto'
     }
   });
 });

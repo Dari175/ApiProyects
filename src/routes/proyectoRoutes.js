@@ -13,4 +13,8 @@ router.delete('/:id', proyectoController.eliminarProyecto);
 router.get('/estado/:estado', proyectoController.filtrarPorEstado);
 router.get('/categoria/:categoria', proyectoController.filtrarPorCategoria);
 
+// Rutas para gestión de imágenes
+router.post('/:id/imagenes', proyectoController.agregarImagen);
+router.delete('/:id/imagenes/:imagenId', proyectoController.eliminarImagen);
+
 module.exports = router;
